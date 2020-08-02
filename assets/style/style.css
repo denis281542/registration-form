@@ -165,7 +165,7 @@ form {
   margin-bottom: 10px;
 }
 
-.input-field, .input-field-password {
+.input-field, .input-field-password, .input-field-email {
   max-width: 380px;
   width: 100%;
   height: 55px;
@@ -179,18 +179,18 @@ form {
   padding: 0 .4rem;
 }
 
-.input-field--active, .input-field-password--active {
+.input-field--active, .input-field-password--active, .input-field-email--active {
   background-color: antiquewhite;
 }
 
-.input-field i, .input-field-password i {
+.input-field i, .input-field-password i, .input-field-email i {
   text-align: center;
   line-height: 55px;
   color: #acacac;
   font-size: 1.1rem;
 }
 
-.input-field input, .input-field-password input {
+.input-field input, .input-field-password input, .input-field-email input {
   background: none;
   outline: none;
   border: none;
@@ -200,22 +200,22 @@ form {
   color: #333;
 }
 
-.input-field ::-webkit-input-placeholder, .input-field-password ::-webkit-input-placeholder {
+.input-field ::-webkit-input-placeholder, .input-field-password ::-webkit-input-placeholder, .input-field-email ::-webkit-input-placeholder {
   color: #aaa;
   font-weight: 500;
 }
 
-.input-field :-ms-input-placeholder, .input-field-password :-ms-input-placeholder {
+.input-field :-ms-input-placeholder, .input-field-password :-ms-input-placeholder, .input-field-email :-ms-input-placeholder {
   color: #aaa;
   font-weight: 500;
 }
 
-.input-field ::-ms-input-placeholder, .input-field-password ::-ms-input-placeholder {
+.input-field ::-ms-input-placeholder, .input-field-password ::-ms-input-placeholder, .input-field-email ::-ms-input-placeholder {
   color: #aaa;
   font-weight: 500;
 }
 
-.input-field ::placeholder, .input-field-password ::placeholder {
+.input-field ::placeholder, .input-field-password ::placeholder, .input-field-email ::placeholder {
   color: #aaa;
   font-weight: 500;
 }
