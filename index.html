@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +11,21 @@
     <div class="container">
         <div class="forms-container">
             <div class="singin-singup">
-                <form action="#" class="sing-in-form">
+                <form action="#" class="sing-in-form" id="sing-in-form">
                     <h2 class="title">Sing in</h2>
                     <p class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username">
+                        <input 
+                            type="text" 
+                            placeholder="Username"
+                            id="name"
+                        >
                     </p>
-                    <p class="input-field">
+                    <p class="input-field-password" id="password-sing-in">
                         <i class="fas fa-unlock"></i>
                         <input type="password" placeholder="Password">
                     </p>
-                    <button class="btn solid" value="Login" type="submit">Login</button>
+                    <button class="btn solid" type="submit" id="button-sing-in">Login</button>
                     <p class="social-text">Or Sing in with social platforms</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
@@ -95,6 +99,7 @@
         </div>
     </div>
 
-    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/animation.js"></script>
+    <script src="/assets/js/validation.js"></script>
 </body>
 </html>

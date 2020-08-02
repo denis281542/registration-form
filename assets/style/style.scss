@@ -129,7 +129,7 @@ form {
     margin-bottom: 10px;
 }
 
-.input-field {
+.input-field, .input-field-password {
     max-width: 380px;
     width: 100%;
     height: 55px;
@@ -139,6 +139,10 @@ form {
     display: grid;
     grid-template-columns: 15% 85%;
     padding: 0 .4rem;
+
+    &--active {
+        background-color: antiquewhite;
+    }
 
     i {
         text-align: center;
@@ -378,3 +382,4 @@ form {
     opacity: 0;
     z-index: 1;
 }
+
