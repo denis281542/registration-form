@@ -21,7 +21,6 @@ input {
 
 @media (max-width: 870px) {
   .container {
-    min-height: 800px;
     max-height: 100vh;
   }
 }
