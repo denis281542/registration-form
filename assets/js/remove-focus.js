@@ -2,9 +2,18 @@
 //const nameInput = document.querySelector(".input");
 const nameField = document.getElementById("name-sing-in");
 const passwordField = document.getElementById("password-sing-in");
+//const nameFocus = document.getElementById("name");
 
 nameField.addEventListener("focusin", () => nameField.classList.remove("input-field--active"));
 passwordField.addEventListener("focusin", () => passwordField.classList.remove("input-field-password--active"));
+//Focus name
+nameField.addEventListener("focusin", () => nameField.classList.add("input-field--focus"))
+//Blur name
+nameField.addEventListener("focusout", () => nameField.classList.remove("input-field--focus"))
+//Focus passwors
+passwordField.addEventListener("focusin", () => passwordField.classList.add("input-field-password--focus"))
+//Blur password
+passwordField.addEventListener("focusout", () => passwordField.classList.remove("input-field-password--focus"))
 
 //Sing up form
 const focusSingUp = document.getElementById("name-sing-up");
