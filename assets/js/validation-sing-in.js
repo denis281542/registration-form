@@ -1,15 +1,9 @@
-function setFocus() {
-    document.getElementById("name").autofocus;
-}
-setFocus();
-
 const form = document.getElementById("sing-in-form");
 
 const submitForm = (event) => {
     event.preventDefault();
     const name = event.target.querySelector("input[type=text]").value;
     const nameHint = event.target.querySelector(".input-field");
-    const nameFocus = event.target.querySelector(".input-field.input");
     const password = event.target.querySelector("input[type=password]").value;
     const passwordHint = event.target.querySelector(".input-field-password");
 
@@ -20,13 +14,9 @@ const submitForm = (event) => {
     }
     if (nameHint.classList.contains("input-field--active")) {
         nameHint.classList.remove("input-field--active");
-    }
 
-    nameHint.onfocus = function() {
-        if (this.classList.contains('input-field--active')) {
-          this.classList.remove('input-field--active');
-        }
-      };
+        nameHint.classList.remove("input-field--active");
+    }
 
     const isValidPassword = validatePassword(password);
     if (!isValidPassword) {
@@ -50,8 +40,4 @@ function validatePassword(password) {
     const re = /^([a-zA-Z ]){2,30}$/;
     return re.test(password);
 }
-
-
-
-
 

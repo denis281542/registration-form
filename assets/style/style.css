@@ -182,6 +182,11 @@ form {
   background-color: antiquewhite;
 }
 
+.input-field--focus, .input-field-password--focus, .input-field-email--focus {
+  border: 1px solid #c5d0db;
+  background-color: #fff;
+}
+
 .input-field i, .input-field-password i, .input-field-email i {
   text-align: center;
   line-height: 55px;
