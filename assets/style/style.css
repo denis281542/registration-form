@@ -173,8 +173,8 @@ form {
   border-radius: 55px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 15% 85%;
-      grid-template-columns: 15% 85%;
+  -ms-grid-columns: 15% 65% 20%;
+      grid-template-columns: 15% 65% 20%;
   padding: 0 .4rem;
 }
 
@@ -187,11 +187,22 @@ form {
   background-color: #fff;
 }
 
+.input-field--focus .fas.fa-user, .input-field--focus .fas.fa-unlock, .input-field-password--focus .fas.fa-user, .input-field-password--focus .fas.fa-unlock, .input-field-email--focus .fas.fa-user, .input-field-email--focus .fas.fa-unlock {
+  color: cadetblue;
+  font-size: 1.5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .input-field i, .input-field-password i, .input-field-email i {
   text-align: center;
   line-height: 55px;
   color: #acacac;
   font-size: 1.1rem;
+}
+
+.input-field .fa-eye, .input-field-password .fa-eye, .input-field-email .fa-eye {
+  cursor: pointer;
 }
 
 .input-field input, .input-field-password input, .input-field-email input {

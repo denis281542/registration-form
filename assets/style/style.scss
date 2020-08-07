@@ -135,7 +135,7 @@ form {
     margin: 10px 0;
     border-radius: 55px;
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 15% 65% 20%;
     padding: 0 .4rem;
 
     &--active {
@@ -145,6 +145,12 @@ form {
     &--focus {
         border: 1px solid #c5d0db;
         background-color: #fff;
+
+        .fas.fa-user, .fas.fa-unlock {
+            color: cadetblue;
+            font-size: 1.5rem;
+            transition: 0.5s;
+        }
     }
 
     i {
@@ -152,6 +158,10 @@ form {
         line-height: 55px;
         color: #acacac;
         font-size: 1.1rem;
+    }
+
+    .fa-eye {
+        cursor: pointer;
     }
 
     input {

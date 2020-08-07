@@ -1,8 +1,6 @@
 //Sing in form
-//const nameInput = document.querySelector(".input");
 const nameField = document.getElementById("name-sing-in");
 const passwordField = document.getElementById("password-sing-in");
-//const nameFocus = document.getElementById("name");
 
 nameField.addEventListener("focusin", () => nameField.classList.remove("input-field--active"));
 passwordField.addEventListener("focusin", () => passwordField.classList.remove("input-field-password--active"));
