@@ -187,7 +187,7 @@ form {
   background-color: #fff;
 }
 
-.input-field--focus .fas.fa-user, .input-field--focus .fas.fa-unlock, .input-field-password--focus .fas.fa-user, .input-field-password--focus .fas.fa-unlock, .input-field-email--focus .fas.fa-user, .input-field-email--focus .fas.fa-unlock {
+.input-field--focus .fas.fa-user, .input-field--focus .fas.fa-unlock, .input-field--focus .fas.fa-envelope, .input-field-password--focus .fas.fa-user, .input-field-password--focus .fas.fa-unlock, .input-field-password--focus .fas.fa-envelope, .input-field-email--focus .fas.fa-user, .input-field-email--focus .fas.fa-unlock, .input-field-email--focus .fas.fa-envelope {
   color: cadetblue;
   font-size: 1.5rem;
   -webkit-transition: 0.5s;

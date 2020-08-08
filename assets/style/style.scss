@@ -146,7 +146,7 @@ form {
         border: 1px solid #c5d0db;
         background-color: #fff;
 
-        .fas.fa-user, .fas.fa-unlock {
+        .fas.fa-user, .fas.fa-unlock, .fas.fa-envelope {
             color: cadetblue;
             font-size: 1.5rem;
             transition: 0.5s;
@@ -161,7 +161,7 @@ form {
     }
 
     .fa-eye {
-        cursor: pointer;
+        cursor: pointer;   
     }
 
     input {

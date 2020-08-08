@@ -4,7 +4,7 @@ const submitForm = (event) => {
     event.preventDefault();
     const name = event.target.querySelector("input[type=text]").value;
     const nameHint = event.target.querySelector(".input-field");
-    const password = event.target.querySelector("input[type=password]").value;
+    const password = event.target.querySelector(".password-text").value;
     const passwordHint = event.target.querySelector(".input-field-password");
 
     const isValidName = validateName(name);
