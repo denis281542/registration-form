@@ -164,6 +164,32 @@ form {
   margin-bottom: 10px;
 }
 
+.hidden-name {
+  display: none;
+  color: tomato;
+  font-weight: 600;
+  position: absolute;
+  left: 37%;
+  top: 18%;
+}
+
+.hidden-name--active {
+  display: block;
+}
+
+.hidden-password {
+  display: none;
+  color: tomato;
+  font-weight: 600;
+  position: absolute;
+  left: 37%;
+  top: 36%;
+}
+
+.hidden-password--active {
+  display: block;
+}
+
 .input-field, .input-field-password, .input-field-email {
   max-width: 380px;
   width: 100%;

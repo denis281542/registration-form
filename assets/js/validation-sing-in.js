@@ -6,21 +6,23 @@ const submitForm = (event) => {
     const nameHint = event.target.querySelector(".input-field");
     const password = event.target.querySelector(".password-text").value;
     const passwordHint = event.target.querySelector(".input-field-password");
+    const nameHidden = event.target.querySelector(".hidden-name");
+    const passwordHidden = event.target.querySelector(".hidden-password");
 
     const isValidName = validateName(name);
     if (!isValidName) {
         nameHint.classList.add("input-field--active");
+        nameHidden.classList.add("hidden-name--active");
         return;
     }
     if (nameHint.classList.contains("input-field--active")) {
-        nameHint.classList.remove("input-field--active");
-
         nameHint.classList.remove("input-field--active");
     }
 
     const isValidPassword = validatePassword(password);
     if (!isValidPassword) {
         passwordHint.classList.add("input-field-password--active");
+        passwordHidden.classList.add("hidden-password--active");
         return;
     }
     if (passwordHint.classList.contains("input-field-password--active")) {
