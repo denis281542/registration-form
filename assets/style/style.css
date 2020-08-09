@@ -173,7 +173,29 @@ form {
   top: 18%;
 }
 
+.hidden-name--sing-up {
+  left: 40%;
+  top: 9%;
+}
+
+.hidden-name--sing-up--active {
+  display: block;
+}
+
 .hidden-name--active {
+  display: block;
+}
+
+.hidden-email {
+  display: none;
+  color: tomato;
+  font-weight: 600;
+  position: absolute;
+  left: 39%;
+  top: 27%;
+}
+
+.hidden-email--active {
   display: block;
 }
 
@@ -184,6 +206,15 @@ form {
   position: absolute;
   left: 37%;
   top: 36%;
+}
+
+.hidden-password--sing-up {
+  left: 38%;
+  top: 45%;
+}
+
+.hidden-password--sing-up--active {
+  display: block;
 }
 
 .hidden-password--active {
